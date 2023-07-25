@@ -1,0 +1,21 @@
+panels:
+  Djch_bottom:
+    perm: default
+    rows: 1
+    title: '&8Generated panel-1'
+    empty: 
+    item:
+      '0':
+        material: POPPY
+        stack: 1
+        name: "&3&o&lHecho Con Amor"
+      '4':
+        material: EXPERIENCE_BOTTLE
+        stack: 1
+        name: "&e&lPor &4&f&k&lR&4&lS4LPICON&4&f&k&lR"
+      '8':
+        material: BARRIER
+        stack: 1
+        name: "&cCerrar Opciones"
+        commands:
+        - mkl

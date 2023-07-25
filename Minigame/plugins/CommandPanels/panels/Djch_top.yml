@@ -1,0 +1,31 @@
+panels:
+  Djch:
+    sound-on-open: BLOCK_IRON_TRAPDOOR_OPEN
+    perm: default
+    commands-on-open:
+    - open= musicas {Middle}
+    - open= Djch_bottom {Bottom}
+    rows: 1
+    title: '&a&lOpciones Del DJ Cucaracha'
+    empty: AIR
+    item:
+      '2':
+        material: TOTEM_OF_UNDYING
+        stack: 1
+        name: '&f&lInciar minijuego'
+        commands:
+        - open= musicas {Middle}
+        
+      '4':
+        material: REDSTONE
+        stack: 1
+        name: '&a&lOpciones Para Detener'
+        commands:
+        - open= Elegirsillas {Middle}
+      '6':
+        material: DIAMOND_SWORD
+        stack: 1
+        name: '&c&lMatar A los Perdedores'
+        commands:
+        - open= matarjugadores {Middle}
+        

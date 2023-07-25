@@ -1,0 +1,91 @@
+panels:
+  Elegirsillas:
+    perm: default
+    rows: 3
+    title: '&8Generated panel-1'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '1':
+        material: TURTLE_EGG
+        stack: 1
+        name: '&b&lDetener Minijuego con &c1 &b&lsillas'
+      '2':
+        material: TURTLE_EGG
+        stack: 2
+        name: '&b&lDetener Minijuego con &c2 &b&lsillas'
+      '3':
+        material: TURTLE_EGG
+        stack: 3
+        name: '&b&lDetener Minijuego con &c3 &b&lsillas'
+      '4':
+        material: TURTLE_EGG
+        stack: 4
+        name: '&b&lDetener Minijuego con &c4 &b&lsillas'
+      '5':
+        material: TURTLE_EGG
+        stack: 5
+        name: '&b&lDetener Minijuego con &c5 &b&lsillas'
+      '6':
+        material: TURTLE_EGG
+        stack: 6
+        name: '&b&lDetener Minijuego con &c6 &b&lsillas'
+      '7':
+        material: TURTLE_EGG
+        stack: 7
+        name: '&b&lDetener Minijuego con &c7 &b&lsillas'
+      '10':
+        material: TURTLE_EGG
+        stack: 8
+        name: '&b&lDetener Minijuego con &c8 &b&lsillas'
+      '11':
+        material: TURTLE_EGG
+        stack: 9
+        name: '&b&lDetener Minijuego con &c9 &b&lsillas'
+      '12':
+        material: TURTLE_EGG
+        stack: 10
+        name: '&b&lDetener Minijuego con &c10 &b&lsillas'
+      '13':
+        material: TURTLE_EGG
+        stack: 11
+        name: '&b&lDetener Minijuego con &c11 &b&lsillas'
+      '14':
+        material: TURTLE_EGG
+        stack: 12
+        name: '&b&lDetener Minijuego con &c12 &b&lsillas'
+      '15':
+        material: TURTLE_EGG
+        stack: 13
+        name: '&b&lDetener Minijuego con &c13 &b&lsillas'
+      '16':
+        material: TURTLE_EGG
+        stack: 14
+        name: '&b&lDetener Minijuego con &c14 &b&lsillas'
+      '19':
+        material: TURTLE_EGG
+        stack: 15
+        name: '&b&lDetener Minijuego con &c15 &b&lsillas'
+      '20':
+        material: TURTLE_EGG
+        stack: 16
+        name: '&b&lDetener Minijuego con &c16 &b&lsillas'
+      '21':
+        material: TURTLE_EGG
+        stack: 17
+        name: '&b&lDetener Minijuego con &c17 &b&lsillas'
+      '22':
+        material: TURTLE_EGG
+        stack: 18
+        name: '&b&lDetener Minijuego con &c18 &b&lsillas'
+      '23':
+        material: TURTLE_EGG
+        stack: 19
+        name: '&b&lDetener Minijuego con &c19 &b&lsillas'
+      '24':
+        material: TURTLE_EGG
+        stack: 20
+        name: '&b&lDetener Minijuego con &c20 &b&lsillas'
+      '25':
+        material: TURTLE_EGG
+        stack: 21
+        name: '&b&lDetener Minijuego con &c21 &b&lsillas'

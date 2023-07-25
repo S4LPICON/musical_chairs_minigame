@@ -1,0 +1,36 @@
+# |------------------------------------------------------------------------
+# |                       CommandPanels Example File
+# |                          Official Panel v3.2
+# | https://www.spigotmc.org/resources/command-panels-custom-guis.67788/
+# |------------------------------------------------------------------------
+panels:
+  example:
+    perm: admin
+    rows: 6
+    title: '&6&l[&b&lExample&6&l]&r Hello %cp-player-name%!'
+    sound-on-open: ENTITY_WITHER_DEATH
+    pre-load-commands:
+    - placeholder= [item:APPLE]
+    - add-data= example_item false
+    commands-on-open:
+    - open= example_middle_one {Middle}
+    - open= example_bottom {Bottom}
+    perm: default
+    rows: 1
+    title: '&a&lOpciones Del DJ Cucaracha'
+    empty: 
+    item:
+      '2':
+        material: TOTEM_OF_UNDYING
+        stack: 1
+        name: '&f&lIniar minijuego'
+        
+      '4':
+        material: REDSTONE
+        stack: 1
+        name: '&a&lOpciones Para Detener'
+      '6':
+        material: DIAMOND_SWORD
+        stack: 1
+        name: '&c&lMatar A los Perdedores'
+        

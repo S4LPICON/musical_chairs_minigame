@@ -1,0 +1,133 @@
+Config:
+  update_notification: true
+  data_save_time: 5
+  debug_actions: true
+  register_commands:
+  - hello
+  to_condition_groups:
+    group1:
+    - '%player_has_permission_conditionalevents.somepermission% == yes'
+Messages:
+  prefix: '&4[&bConditionalEvents&4] '
+  commandReload: '&aConfig Reloaded.'
+  commandNoPermissions: '&cYou don''t have permissions to use this command.'
+  commandResetError: '&cUse &7/ce reset <player> <event>/all'
+  eventDoesNotExists: '&cThat event doesn''t exists on the config.'
+  eventDataReset: '&aData reset for player &e%player% &aon event &e%event%&a!'
+  eventDataResetAll: '&aAll data reset for player &e%player%&a!'
+  eventDataResetForAllPlayers: '&aData reset for &eall players &aon event &e%event%&a!'
+  eventDataResetAllForAllPlayers: '&aAll player data reset.'
+  eventEnableError: '&cUse &7/ce enable <event>'
+  eventDisableError: '&cUse &7/ce disable <event>'
+  eventEnabled: '&aEvent &7%event% &aenabled.'
+  eventDisabled: '&aEvent &7%event% &adisabled.'
+  commandDebugError: '&cUse &7/ce debug <event>'
+  debugEnabled: '&aDebug now enabled for event &7%event%&a!'
+  debugDisabled: '&aDebug disabled for event &7%event%&a!'
+  debugEnabledPlayer: '&aDebug now enabled for event &7%event% &aand player &7%player%&a!'
+  debugDisabledPlayer: '&aDebug disabled for event &7%event% &aand player &7%player%&a!'
+  onlyPlayerCommand: '&cThis command can be only used by a player.'
+  playerDoesNotExists: '&cThat player doesn''t have any data.'
+  seconds: s
+  minutes: m
+  hours: h
+  days: d
+  placeholderAPICooldownReady: Ready!
+  placeholderAPICooldownNameError: No event with that name!
+  commandCallError: '&cUse &7/ce call <event> (optional)%variable1%=<value1>;%variableN%=<valueN>'
+  commandCallInvalidEvent: '&cYou can only execute a CALL event.'
+  commandCallCorrect: '&aEvent &7%event% &asuccessfully executed.'
+  commandCallFailed: '&cEvent &7%event% &ccould not be executed. Maybe a format error?'
+Events:
+  entrar_jugador:
+    type: player_join
+    actions:
+      default:
+      - "hide_join_message: true"
+      - 'message: &eBienvenido %player% al servidor.'
+  jugaDORSALE:
+    type: player_leave
+    actions:
+      default:
+      - "hide_leave_message: true"
+      - 'to_all: message: &e%player% Salio del servidor.'
+  muerejugador:
+    type: player_respawn
+    conditions:
+    - '%player_world% == Sillas'
+    actions:
+      default:
+      - 'message: &cHas perdido'
+  Entrovagoneta:
+    type: player_bed_enter
+    conditions:
+    - "%result% == OK"
+    - "%player_world% == Sillas"
+    actions:
+      default:
+      - "message: &aEntraste en una vagoneta!."
+      - "firework: colors:YELLOW,RED type:BALL fade:AQUA power:0"
+  Stamina:
+    type: player_run
+    conditions:
+    - "%is_running% == true execute actions1"
+    actions:
+      actions1:
+      - "actionbar: &eTe estas Corriendo;0"
+      - "particle: effect:EXPLOSION_LARGE offset:0.1;0.1;0.1 speed:1 amount:5"
+      default:
+      - "actionbar: &eHaz dejado de correr;40"
+  particulas ganador:
+      type: player_command
+      conditions:
+      - "%main_command% == /rpt"
+      actions:
+        default:
+        - "execute_action_group: firework1:70;firework2:30;firework3:30"
+        firework1:
+        - "firework: colors:YELLOW,RED type:BALL fade:AQUA power:0"
+        firework2:
+        - "firework: colors:BLACK,WHITE type:BURST power:1"
+        firework3:
+        - "firework: colors:GREEN,BLUE type:BURST power:1"
+        - 'wait: 4'
+        - "cancel_event: true"
+  Cerrar inventarios:
+      type: player_command
+      conditions:
+      - "%main_command% == /mkl"
+      actions:
+        default:
+        - close_inventory
+  abrirpanel:
+    type: item_interact
+    conditions:
+    - '%item% == REDSTONE'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - "player_command: cp Djch"
+      - 
+  Botar itemsno:
+    type: item_drop
+    actions:
+      default:
+      - "cancel_event: true"
+      - "message: &cNo puedes tirar items."
+  Nomatarvagoneta:
+  type: player_attack
+  conditions:
+  - '%victim% == MINECART'
+  actions:
+    default:
+    - 'message: &aNO'
+    - 'cancel_event: true'
+  Impsible:
+    type: player_kill
+    conditions:
+    - '%victim% == COW'
+    actions:
+      default:
+      - 'message: &aComo chingados llego una vaca aqui XD'
+
+      #s4lpicon.noalaviolenciacontralasvagonetas.NOalaviolenciacontralasvagonetas

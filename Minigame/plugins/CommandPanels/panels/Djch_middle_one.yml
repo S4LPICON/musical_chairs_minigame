@@ -1,0 +1,15 @@
+panels:
+  Djch_middle_one:
+    perm: default
+    rows: 4
+    title: '&8Generated panel-1'
+    empty: AIR
+    item:
+      '11':
+        material: KELP
+        stack: 1
+        name: '&f&lInciar minijuego'
+      '15':
+        material: REDSTONE_TORCH
+        stack: 1
+        name: '&c&lCerrar Opciones de Dj'
